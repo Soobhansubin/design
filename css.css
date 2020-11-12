@@ -1,0 +1,59 @@
+
+* { margin: 0; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; }
+a { text-decoration: none;  }
+span { opacity: 0; }
+
+nav	{ margin: auto; z-index: 6; max-width: 1200px; height: 100px; line-height: 100px;}
+.navbar { flex-wrap: nowrap; }
+.navbar-nav {  margin-left: auto; max-width: 1200px; line-height: normal; }
+.navbar-toggler-icon { opacity: 1; }
+
+/*nav	{ width: 100vw; display: flex; justify-content: space-between; height: 130px; max-width: 1200px; margin: auto; align-items: center; }
+
+nav #logo { margin-left: 60px; }
+nav #logo a { line-height: 60%; text-decoration: none;  }
+nav ul { margin-right: 60px; }
+nav ul li { display: inline-block; padding: 0 15px; text-transform: uppercase; font-weight: bold; color: #444; }
+nav ul li:hover { color: #C60000FF; }*/
+
+main { overflow: hidden; }
+section { background-image: url(hero_cal.png); background-repeat: no-repeat; background-size: cover; background-position: center; position: relative; width: 100vw; height: 750px;  overflow: hidden; min-width: 1200px; }
+section:after { content: ""; width: 100vw; height: 100%; background-color: black; display: block; position: absolute; top: 0; opacity: .6; }
+
+section #hero_cal { width: 100vw; height: 100%; max-width: 1200px; margin: auto; position: relative; display: flex; justify-content: space-between; align-items: center; min-width: 1200px; }
+section #hero_cal .shedule { color: #fff; z-index: 5; margin-left: 50px; }
+section #hero_cal .shedule *{ font-size: 40px; font-weight: 500; line-height: 60px; background-color: #C40000FF; width: 275px; height: 60px; text-align: center; }
+section #hero_cal .shedule p:nth-child(1) { margin-left: 10px; }
+section #hero_cal .shedule p:nth-child(2) { margin-left: 50px; }
+
+section #hero_cal .calender { width: 600px; height: 600px; border-radius: 5%; overflow: hidden; position: relative; }
+section #hero_cal .calender .cal_text { display: flex; justify-content: space-around; flex-wrap: wrap; position: absolute; width: 100%; height: 100%; }
+section #hero_cal .calender .cal_text ul { display: flex; flex-flow: column; justify-content: space-between; height: 100%; flex-basis: 0; padding: 40px 0px 40px 20px; }
+section #hero_cal .calender .cal_text ul:nth-child(1) { flex-grow: 0; font-size: 10px; padding-left:40px; }
+section #hero_cal .calender .cal_text ul:nth-child(1) li{ line-height: 22px; font-size: 12px; }
+section #hero_cal .calender .cal_text ul:nth-child(2) { flex-grow: 0; }
+section #hero_cal .calender .cal_text ul:nth-child(3) { flex-grow: 0.35; }
+section #hero_cal .calender .cal_text ul:nth-child(3) li{ font-size: 12px; line-height: 19px; }
+section #hero_cal .calender .cal_text ul:nth-child(3) li div{ background-color: #C60000FF; text-align: center; vertical-align: middle; border-radius: 15px; }
+section #hero_cal .calender .cal_text ul:nth-child(4) { flex-grow: 2; }
+section #hero_cal .calender .cal_text ul li { display: block; color: white; z-index: 6; font-size: 15px; }
+section #hero_cal .calender .cal_bg { background-color: black; opacity: .5; width: 100%; height: 100%; }
+
+.countdown { line-height: 15px; }
+
+#awards { width: 1200px; height: 400px; display: flex; flex-wrap: nowrap; margin: auto; position: relative; }
+#awards a { position: relative; height: 100%; flex-basis: 0; flex-grow: 1; text-align: center; line-height: 400px; }
+#awards a:hover { flex-grow: 2; }
+#awards .bg { width: 100%; height: 100%; }
+#awards .bg:after { content: ""; width: 100%; height: 400px; background-color: black; position: absolute; left: 0; opacity: 0.3;  }
+
+#awards a h3 { position: absolute; transform: translateX(-50%); left: 50%;  width: 175px; color: #fff; z-index: 3; font-size: 15px; font-weight: normal; line-height: 400px; }
+
+
+#awards a:nth-child(1) .bg { background-color: red; }
+#awards a:nth-child(2) .bg { background-color: yellow; }
+#awards a:nth-child(3) .bg { background-color: blue; }
+#awards a:nth-child(4) .bg { background-color: green; }
+
+#footer { width: 100vw; height: 120px; background-color: #ccc; overflow: hidden; }
+#footer .content { width: 1200px; height: 100%; margin: auto; }
